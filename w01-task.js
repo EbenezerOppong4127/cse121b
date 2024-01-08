@@ -1,5 +1,5 @@
 // 🔍 Part 1 error
-let userName = "Moroni";
+let userName = "Moronisssssssssss";
 console.log(`Username: ${userName}`);
 userName = "Moronihah";
 console.log(`Username: ${userName}`);
