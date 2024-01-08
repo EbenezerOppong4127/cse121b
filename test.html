@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #helloWorld {
+            font-size: 2em;
+            opacity: 0;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>Animated Hello World</title>
 </head>
 <body>
-<p>Testing page ooooooo</p>
+<div class="container">
+    <h1 id="helloWorld">Hello, World! I render my test.html page</h1>
+</div>
+
+<script>
+
+    $(document).ready(function() {
+        $('#helloWorld').animate({
+            opacity: 1,
+            fontSize: '3em'
+        }, 1000);
+    });
+
+</script>
 </body>
 </html>
