@@ -55,7 +55,7 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
 // Declare an array variable to hold your favorite foods.
-let favFoods = ['Pizza', 'Chocolate', 'Ice Cream'];
+let favFoods = ['Rice', 'Tikka Massala', 'Steak' ,'Banana Cream Pie'];
 
 
 // Modify the HTML element with the id of food to display your favorite foods array.
@@ -67,8 +67,8 @@ let newFavoriteFood = 'Sushi';
 // Add the value stored in this new variable to your favorite food array.
 favFoods.push(newFavoriteFood);
 
-// Append the new array values onto the displayed content of the HTML element with the id of food using a += operator and a <br> (line break character) to provide a line break.
-foodElement.innerHTML += `<br>${newFavoriteFood}`;
+// // Append the new array values onto the displayed content of the HTML element with the id of food using a += operator and a <br> (line break character) to provide a line break.
+foodElement.innerHTML += `<br>${favFoods}`;
 
 // Remove the first element in the favorite food array.
 favFoods.shift();
