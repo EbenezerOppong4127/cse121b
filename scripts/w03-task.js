@@ -13,11 +13,11 @@ function addNumbers(){
 
     let addNumber1 = Number(document.querySelector('#add1').value);
     let addNumber2 = Number(document.querySelector('#add2').value);
-
-
     document.querySelector('#sum').value = add(addNumber1 , addNumber2);
+
 }
 
+//this one is not locate inside a function
 document.querySelector('#addNumbers').addEventListener('click',addNumbers)
 
 /* Function Expression - Subtract Numbers */
@@ -38,7 +38,9 @@ function subtractNumbers() {
 
     //Let  Assign the return value to an HTML form element with an ID of "difference"
     document.getElementById("difference").value = result;
+
 }
+
 
 // Add a "click" event listener to the HTML button with an ID of "subtractNumbers"
 document.getElementById("subtractNumbers").addEventListener('click', subtractNumbers);
@@ -80,32 +82,38 @@ const divideNumbers = () => {
     // Call the divide function with the two arguments
     let result = divide(dividend, divisor);
 
-    // Assign the return value to an HTML form element with an ID of "quotient"
+// Assign the return value to an HTML form element with an ID of "quotient"
+
     document.getElementById("quotient").value = result;
+
 }
+
+
 
 // Add a "click" event listener to the HTML button with an ID of "divideNumbers"
 document.getElementById("divideNumbers").addEventListener('click', divideNumbers);
 /* Decision Structure */
 
-// Add an event listener to the HTML button with an ID of "getTotalDue"
-document.getElementById("getTotalDue").addEventListener('click', calculateTotal);
+
 
 // Function to calculate the total due
+// Add an event listener to the "Get Total Due" button
+document.getElementById("getTotal").addEventListener('click', calculateTotal);
+// Function to calculate the total due
 function calculateTotal() {
-    // Get the numeric value entered by the user in the subtotal field
+    // Let Get the numeric value entered by the user in the subtotal field
     let subtotalValue = parseFloat(document.getElementById("subtotal").value);
 
-    // Check if the membership checkbox has been checked
-    let applyDiscount = document.getElementById("membership").checked;
+    // Let Check if the membership checkbox has been checked
+    let isMember = document.getElementById("member").checked;
 
     // Apply a 15% discount if the checkbox is checked
-    if (applyDiscount) {
+    if (isMember) {
         subtotalValue *= 0.85;
     }
 
-    // Output the total to the total span in the specified format with two decimals
-    document.getElementById("total").textContent = `Total Due: $${subtotalValue.toFixed(2)}`;
+    // Output the total to the total span in the specified format with two decimals using a template string
+    document.getElementById("total").textContent = `$ ${subtotalValue.toFixed(2)}`;
 }
 /* ARRAY METHODS - Functional Programming */
 
@@ -119,7 +127,6 @@ let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
 // Assign the value of the array variable to the HTML element with an ID of "array"
 document.getElementById("array").textContent = numbersArray;
-
 
 /* Output Odds Only Array */
 
