@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.0/dist/sweetalert2.all.min.js"></script>
+    <link href="crud.png" rel="shortcut icon">
+</head>
+</head>
+<body>
+
+<form id="add-post-form">
+    <div style="width: 50%;margin-left: 141px;margin-top: 98px;">
+        <div class="form-group">
+            <label for="titles">Title:</label>
+            <input type="text" id="titles" name="title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Body:</label>
+            <textarea id="description" name="body" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+
+<form id="edit-post-form" hidden>
+    <div style="width: 50%;margin-left: 141px;margin-top: 98px;" >
+        <div class="form-group">
+            <input hidden id="edit-post-id" required type="text" name="id">
+            <label for="edit-titles">Title:</label>
+            <input type="text" id="edit-titles" name="title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="edit-description">Body:</label>
+            <textarea id="edit-description" name="body" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>
+<br>
+<input id='myInput' onkeyup='searchTable()' type='text' style="width: 20%;display: flex; float:inline-end;" placeholder="Enter your words to make search">
+<br>
+<br>
+<br>
+<br>
+
+<div id="app">
+    <!-- Your CRUD interface elements will be dynamically added here -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

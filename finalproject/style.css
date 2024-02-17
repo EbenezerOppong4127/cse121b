@@ -1,0 +1,99 @@
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.data-table button {
+    cursor: pointer;
+}
+
+
+.btnedit{
+
+    border-radius: 9px;
+    margin-bottom: 15px;
+    background-color: lavenderblush;
+    font-size: small;
+    font-stretch: inherit;
+    font-family: auto;
+    padding-right: 14px;
+    text-align: center;
+}
+
+.btndelete{
+
+    border-radius: 9px;
+    margin-bottom: 15px;
+    background-color: #d00d34;
+    font-size: small;
+    font-stretch: inherit;
+    font-family: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+}
+
+
+.add-content-link {
+    margin-top: 48px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    float: inline-end;
+}
+
+.add-content-link:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
